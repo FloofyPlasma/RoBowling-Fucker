@@ -66,8 +66,8 @@ RoBowling Fucker V1 \\ Att#7148
 ]])
 
 function getlanes()
-    for _, v in (game.Workspace.FunctionalAssets.BowlingLanes.Lanes:GetChildren()) do
-        for _, b in (v.Scoring.Screen2.BowlingLaneBoard.BoardGui.ImageLabel:GetChildren()) do
+    for _, v in next, game.Workspace.FunctionalAssets.BowlingLanes.Lanes:GetChildren() do
+        for _, b in next, v.Scoring.Screen2.BowlingLaneBoard.BoardGui.ImageLabel:GetChildren() do
             if b.Name == game.Players.LocalPlayer.Name then
                 return b.Parent.Parent.Parent.Parent.Parent.Parent
             end
@@ -78,7 +78,7 @@ end
 
 
 TopplePins.MouseButton1Click:Connect(function()
-    for _, v in (getlanes().FunctioningAssets.Pins:GetChildren()) do
+    for _, v in next, getlanes().FunctioningAssets.Pins:GetChildren() do
         v.Rotation = Vector3.new(90, 0, 0)
     end
 end)
