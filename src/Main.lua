@@ -4,11 +4,9 @@ RoBowling Fucker V1 \\ Att#7148
 
 ]])
 
-local char = game.Players.LocalPlayer.Character
-local hrp = char.HumanoidRootPart
 function getlanes()
-    for i, v in next, game.Workspace.FunctionalAssets.BowlingLanes.Lanes:GetChildren() do
-        for a, b in next, v.Scoring.Screen2.BowlingLaneBoard.BoardGui.ImageLabel:GetChildren() do
+    for _, v in (game.Workspace.FunctionalAssets.BowlingLanes.Lanes:GetChildren()) do
+        for _, b in (v.Scoring.Screen2.BowlingLaneBoard.BoardGui.ImageLabel:GetChildren()) do
             if b.Name == game.Players.LocalPlayer.Name then
                 return b.Parent.Parent.Parent.Parent.Parent.Parent
             end
@@ -16,10 +14,9 @@ function getlanes()
     end
 end
 
-local coreGui = game:GetService("CoreGui")
-local ui = coreGui:FindFirstChild('RoBowlingFucker', true)
+local RoBowlingFucker, MainFrame, Title, TopplePins = loadstring(game:HttpGet("https://raw.githubusercontent.com/FloofyPlasma/RoBowling-Fucker/master/src/UI.lua"))()
 
-ui.MainFrame.TopplePins.MouseButton1Click:Connect(function()
+TopplePins.MainFrame.TopplePins.MouseButton1Click:Connect(function()
     for i, v in next, getlanes().FunctioningAssets.Pins:GetChildren() do
         v.Rotation = Vector3.new(90, 0, 0)
     end
