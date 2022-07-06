@@ -46,7 +46,7 @@ TopplePins.BorderSizePixel = 0
 TopplePins.Position = UDim2.new(0.074000001, 0, 0.5, 0)
 TopplePins.Size = UDim2.new(0, 161, 0, 27)
 TopplePins.Font = Enum.Font.GothamBlack
-TopplePins.Text = "TopplePins"
+TopplePins.Text = "Topple Pins"
 TopplePins.TextColor3 = Color3.fromRGB(255, 255, 255)
 TopplePins.TextSize = 14.000
 
