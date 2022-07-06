@@ -14,7 +14,7 @@ function getlanes()
     end
 end
 
-local RoBowlingFucker, MainFrame, Title, TopplePins = loadstring(game:HttpGet("https://raw.githubusercontent.com/FloofyPlasma/RoBowling-Fucker/master/src/UI.lua"))()
+local RoBowlingFucker, MainFrame, Title, TopplePins = loadstring(game:HttpGet("https://raw.githubusercontent.com/FloofyPlasma/RoBowling-Fucker/master/src/UI.lua"))()()
 
 repeat task.wait() until TopplePins ~= nil
 
