@@ -53,5 +53,5 @@ TopplePins.TextSize = 14.000
 UICorner_2.Parent = TopplePins
 
 return function()
-	return RoBowlingFucker, MainFrame, Title, TopplePins, true
+	return RoBowlingFucker, MainFrame, Title, TopplePins
 end

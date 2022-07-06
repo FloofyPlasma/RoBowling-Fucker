@@ -14,9 +14,9 @@ function getlanes()
     end
 end
 
-local RoBowlingFucker, MainFrame, Title, TopplePins, ready = loadstring(game:HttpGet("https://raw.githubusercontent.com/FloofyPlasma/RoBowling-Fucker/master/src/UI.lua"))()
+local RoBowlingFucker, MainFrame, Title, TopplePins = loadstring(game:HttpGet("https://raw.githubusercontent.com/FloofyPlasma/RoBowling-Fucker/master/src/UI.lua"))()
 
-repeat task.wait() until ready
+repeat task.wait() until TopplePins ~= nil
 
 TopplePins.Activated:Connect(function()
     for _, v in (getlanes().FunctioningAssets.Pins:GetChildren()) do
