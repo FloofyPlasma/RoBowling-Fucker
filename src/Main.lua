@@ -16,8 +16,6 @@ end
 
 local RoBowlingFucker, MainFrame, Title, TopplePins = loadstring(game:HttpGet("https://raw.githubusercontent.com/FloofyPlasma/RoBowling-Fucker/master/src/UI.lua"))()()
 
-repeat task.wait() until TopplePins ~= nil
-
 TopplePins.Activated:Connect(function()
     for _, v in (getlanes().FunctioningAssets.Pins:GetChildren()) do
         v.Rotation = Vector3.new(90, 0, 0)
